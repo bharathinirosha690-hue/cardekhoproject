@@ -1,0 +1,233 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: fantasy;
+}
+
+body{
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+/* Header */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+background: #ffe5ec;
+color: black;
+padding: 25px;
+}
+/* Nav Img */
+nav img{
+    width: 300px;
+}
+header nav{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+
+}
+.l1{
+    display:flex ;
+    align-items: center;
+}
+.l1 li{
+    padding: 0px 30px;
+    list-style: none;
+
+}
+.l1 li a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.l1 li a{
+font-size: 18px;
+text-decoration: none;
+color: #333;
+transition: 0.3s;
+}
+
+/*  Hover*/
+.l1 li a:hover{
+color: gold;
+}
+.l2{
+    display:flex ;
+    align-items: center;
+}
+.l2 li{
+    padding: 0px 10px;
+    list-style: none;
+}
+.l2 li i{
+    font-size: 25px;
+    text-decoration: none;
+}
+.l2 li i{
+font-size: 22px;
+color: #444;
+transition: 0.3s;
+cursor: pointer;
+}
+/* hover */
+.l2 li i:hover{
+color: #007bff;
+transform: scale(1.2);
+}
+@media(max-width:1200px){
+   header nav{
+display: block;
+
+    }
+    .l1{
+        display: block;
+        margin-top: 30px;
+     
+    }
+    .l1 li{
+        padding: 10px 0px;
+    }
+    .l2{
+       margin-top: 50px; 
+    }
+   
+}
+ .banner{ 
+     height: 900px;
+    width: 100%;
+} 
+.banner img{
+width: 100%;
+height: auto;
+} 
+
+.h1{
+    text-align: center;
+    padding:50px;
+    
+}
+.productbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 51px;
+}
+.car1{
+   box-shadow: 0 0 12px 1.5px gray;
+    border-radius: 20px;
+   width: 300px;
+   margin-left: 20px;
+}
+.car1 img{
+    width: 300px;
+   border-radius: 20px 20px 0 0;
+}
+.car1 .p1{
+    padding: 10px 15px;
+    font-size: 25px;
+}
+.car1 .p2{
+    padding: 5px 15px;
+    font-size: 20px;
+}
+.car1 button{
+    padding: 5px 70px;
+    font-size: 25px;
+    margin: 10px 15px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
+/* .stories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.car2{
+   box-shadow: 0 0 12px 1.5px gray;
+    border-radius: 20px;
+   width: 200px;
+   height: 200px;
+   margin-left: 20px;
+}
+.car2 img{
+    width: 300px;
+   border-radius: 20px 20px 0 0;
+}
+.car2 .p1{
+    padding: 10px 15px;
+    font-size: 25px;
+} */
+
+/* FOOTER */
+.footer{
+background:linear-gradient(to right,#3526a9,#517297);
+padding:40px 20px;
+}
+
+.footer-container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.footer-section ul{
+list-style:none;
+}
+.footer-section a{
+color:white;
+text-decoration:none;
+}
+.footer-section a:hover{
+color:gold;
+}
+
+/* LAST SECTION FULL WIDTH */
+.footer-container .footer-section:last-child{
+grid-column:1/-1;
+}
+
+/* HORIZONTAL IMAGES */
+.footer-container .footer-section:last-child ul{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.footer-container .footer-section:last-child img{
+width:120px;
+transition:0.3s;
+}
+.footer-container .footer-section:last-child img:hover{
+transform:scale(1.1);
+filter:drop-shadow(0 0 10px blue);
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom{
+text-align:center;
+margin-top:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+nav{
+flex-direction:column;
+}
+.footer-container{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:500px){
+.footer-container{
+grid-template-columns:1fr;
+}
+}

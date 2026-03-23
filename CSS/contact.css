@@ -1,0 +1,303 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    background-color: #fef9ef;
+color: black;
+    padding: 30px;
+
+}
+nav img{
+    width: 300px;
+}
+header nav{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+
+}
+.l1{
+    display:flex ;
+    align-items: center;
+}
+.l1 li{
+    padding: 0px 30px;
+    list-style: none;
+
+}
+.l1 li a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.l2{
+    display:flex ;
+    align-items: center;
+}
+.l2 li{
+    padding: 0px 10px;
+    list-style: none;
+}
+.l2 li i{
+    font-size: 25px;
+    text-decoration: none;
+}
+@media(max-width:1200px){
+   header nav{
+display: block;
+
+    }
+    .l1{
+        display: block;
+        margin-top: 30px;
+     
+    }
+    .l1 li{
+        padding: 10px 0px;
+    }
+    .l2{
+       margin-top: 50px; 
+    }
+   
+}
+
+/* Hero Section */
+.hero {
+  background:black;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+  background:black;
+  padding: 40px 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Scroll*/
+.scroll-box {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Content */
+.scroll-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollMove 10s linear infinite;
+}
+
+/* Heading */
+.scroll-content h1 {
+  font-size: 40px;
+  color: gold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  animation: scaleText 2s ease-in-out infinite alternate;
+}
+
+/* Paragraph */
+.scroll-content p {
+  font-size: 18px;
+  color: gold;
+  font-weight: bold;
+  animation: scaleText 2s ease-in-out infinite alternate;
+}
+
+/* Scroll Animation */
+@keyframes scrollMove {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Scale Animation */
+@keyframes scaleText {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* MAIN */
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* LEFT */
+.left {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.left h2, .right h2 {
+  margin-bottom: 10px;
+}
+
+.radio-box label,
+.check-box label {
+  display: block;
+  margin: 6px 0;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+/* RIGHT FORM */
+.right {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.right input,
+.right textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.right button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right button:hover {
+  background: #0056b3;
+}
+
+/* FAQ */
+.faq {
+  padding: 30px;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-box {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.logo{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.place1{
+     box-shadow: 0 0 10px 1.5px black;
+    border-radius: 20px;
+   width: 200px;
+   margin-left: 20px;
+}
+.place1 img{
+    width: 200px;
+   border-radius: 100px; 
+}
+.place1 .p1{
+    padding: 10px 15px;
+    font-size: 20px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.image2{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+.place2{
+     box-shadow: 0 0 10px 1.5px black;
+    border-radius: 20px;
+   width: 200px;
+   margin-left: 20px;
+}
+.place2 img{
+    width: 200px;
+   border-radius: 20px 20px 0 0; 
+}
+.place2 .p1{
+    padding: 10px 15px;
+    font-size: 20px;
+    font-family: fantasy;
+    text-align: center;
+}
+
+/* Footer (simple background) */
+.footer {
+  background: black;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Thank You Card with Image */
+.thankyou-box {
+  background: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') no-repeat center/cover;
+
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+/* Heading */
+.thankyou-box h2 {
+  color: gold;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+/* Paragraph */
+.thankyou-box p {
+  color: #eee;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Brand Name */
+.thankyou-box span {
+  color: gold;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
