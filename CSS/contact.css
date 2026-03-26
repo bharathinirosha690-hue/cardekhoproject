@@ -5,11 +5,11 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 header{
-    background-color: #fef9ef;
+background: #dad7cd;
 color: black;
-    padding: 30px;
-
+padding: 25px;
 }
+/* Nav Img */
 nav img{
     width: 300px;
 }
@@ -29,8 +29,15 @@ header nav{
 
 }
 .l1 li a{
-    font-size: 20px;
-    text-decoration: none;
+font-size: 21px;
+font-weight: 600;
+text-decoration: none;
+transition: 0.3s;
+}
+
+/*  Hover*/
+.l1 li a:hover{
+color: red;
 }
 .l2{
     display:flex ;
@@ -44,25 +51,39 @@ header nav{
     font-size: 25px;
     text-decoration: none;
 }
+.l2 li i{
+font-size: 22px;
+color: #444;
+transition: 0.3s;
+cursor: pointer;
+}
+/* hover */
+.l2 li i:hover{
+color: #007bff;
+transform: scale(1.2);
+}
 @media(max-width:1200px){
    header nav{
 display: block;
 
     }
+    nav img{
+        margin-left: 70px;
+    }
     .l1{
         display: block;
         margin-top: 30px;
-     
+        margin-left: 185px;
     }
     .l1 li{
         padding: 10px 0px;
     }
     .l2{
        margin-top: 50px; 
+       margin-left: 120px;
     }
    
 }
-
 /* Hero Section */
 .hero {
   background:black;
@@ -206,7 +227,14 @@ display: block;
   margin-bottom: 10px;
   border-radius: 8px;
 }
-
+.h1{
+text-align:center;
+margin:20px;
+}
+.h1 h1{
+color:black;
+text-shadow:0 0 10px gold;
+}
 .logo{
      display: flex;
     flex-wrap: wrap;
@@ -214,7 +242,7 @@ display: block;
     gap: 20px;
 }
 .place1{
-     box-shadow: 0 0 10px 1.5px black;
+     box-shadow: 0 0 5px 1.5px gray;
     border-radius: 20px;
    width: 200px;
    margin-left: 20px;

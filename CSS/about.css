@@ -7,18 +7,11 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 body{
 background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-color:white;
+color: black;
 }
 
-/* Header */
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 header{
-background: #ffe5ec;
+background: #dad7cd;
 color: black;
 padding: 25px;
 }
@@ -42,19 +35,15 @@ header nav{
 
 }
 .l1 li a{
-    font-size: 20px;
-    text-decoration: none;
-}
-.l1 li a{
-font-size: 18px;
+font-size: 21px;
+font-weight: 600;
 text-decoration: none;
-color: #333;
 transition: 0.3s;
 }
 
 /*  Hover*/
 .l1 li a:hover{
-color: gold;
+color: red;
 }
 .l2{
     display:flex ;
@@ -84,16 +73,20 @@ transform: scale(1.2);
 display: block;
 
     }
+    nav img{
+        margin-left: 70px;
+    }
     .l1{
         display: block;
         margin-top: 30px;
-     
+        margin-left: 185px;
     }
     .l1 li{
         padding: 10px 0px;
     }
     .l2{
        margin-top: 50px; 
+       margin-left: 120px;
     }
    
 }
@@ -169,14 +162,12 @@ box-shadow:0 0 20px cyan;
 .container{
 max-width:1000px;
 margin:20px auto;
-padding:25px;
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
+background-color: whitesmoke;
 border-radius:12px;
 }
 
 h1,h2,h3{
-color: red;
+color: blue;
 margin-bottom:10px;
 }
 
@@ -186,15 +177,21 @@ display:block;
 }
 .gree .card{
 background:rgba(255,255,255,0.05);
-border-left:4px solid gold;
+/* border-left:4px solid gold; */
 padding:12px;
 margin-bottom:10px;
 border-radius:6px;
 }
+.container ul li{
+   margin-left: 40px;
+}
+.container{
+    padding: 30px 100px 30px 50px;
+}
 
 /* FOOTER */
 .footer{
-background:whitesmoke;
+background: #dad7cd;
 padding:40px 20px;
 }
 
