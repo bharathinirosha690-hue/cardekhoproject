@@ -5,10 +5,7 @@ box-sizing:border-box;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-body{
-background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-color: black;
-}
+
 
 header{
 background: #dad7cd;
@@ -18,6 +15,15 @@ padding: 25px;
 /* Nav Img */
 nav img{
     width: 300px;
+    animation: move 2s ease-out ;
+}
+@keyframes move{
+   from{
+    transform:translateX(-450px);
+   }
+   to{
+     transform:translateX(0px);
+   }
 }
 header nav{
     display: flex;
@@ -28,6 +34,15 @@ header nav{
 .l1{
     display:flex ;
     align-items: center;
+     animation: move1 2s ease-out ;
+}
+@keyframes move1{
+   from{
+    transform:translateY(-450px);
+   }
+   to{
+     transform:translateY(0px);
+   }
 }
 .l1 li{
     padding: 0px 30px;
@@ -48,6 +63,16 @@ color: red;
 .l2{
     display:flex ;
     align-items: center;
+     animation: move2 2s ease-out ;
+
+}
+@keyframes move2{
+   from{
+    transform:translateX(450px);
+   }
+   to{
+     transform:translateX(0px);
+   }
 }
 .l2 li{
     padding: 0px 10px;
@@ -68,6 +93,15 @@ cursor: pointer;
 color: #007bff;
 transform: scale(1.2);
 }
+.l2 i{
+margin:0 10px;
+cursor:pointer;
+transition:0.3s;
+}
+.l2 i:hover{
+transform:scale(1.2);
+color:gold;
+}
 @media(max-width:1200px){
    header nav{
 display: block;
@@ -87,10 +121,26 @@ display: block;
     .l2{
        margin-top: 50px; 
        margin-left: 120px;
-    }
-   
+    } 
 }
- .banner{ 
+@media(min-width:300px) and (max-width:490px){
+    .l1{
+        margin-left: 120px;
+
+    }
+    nav img{
+        margin-left: 30px;
+    }
+    .l2{
+        margin-left: 60px;
+    }
+    .banner{
+        height: 300px !important;
+
+    }
+}
+   
+ /* .banner{ 
      height: 900px;
     width: 100%;
 } 
@@ -102,23 +152,27 @@ height: auto;
 .h1{
     text-align: center;
     padding:50px;   
-}
+} */
 
 /* ICONS */
-.l2 i{
-margin:0 10px;
-cursor:pointer;
-transition:0.3s;
-}
-.l2 i:hover{
-transform:scale(1.2);
-color:gold;
-}
+
 
 /* VIDEO */
 .video-container video{
 width:100%;
 border-radius:10px;
+animation: video 1s ease-out;
+}
+@keyframes video{
+  0%{
+    transform:translateY(300px);
+    opacity: 0;
+    
+  }
+  100%{
+     transform:translateY(0px);
+    opacity: 1;
+  }
 }
 
 /* TITLE */
@@ -146,6 +200,9 @@ overflow:hidden;
 border-radius:12px;
 perspective:1000px;
 }
+
+
+
 .car1 img,.car2 img{
 width:100%;
 height:100%;

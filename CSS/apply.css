@@ -1,9 +1,11 @@
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
 
 header{
 background: #dad7cd;
@@ -13,6 +15,15 @@ padding: 25px;
 /* Nav Img */
 nav img{
     width: 300px;
+    animation: move 2s ease-out ;
+}
+@keyframes move{
+   from{
+    transform:translateX(-450px);
+   }
+   to{
+     transform:translateX(0px);
+   }
 }
 header nav{
     display: flex;
@@ -23,6 +34,15 @@ header nav{
 .l1{
     display:flex ;
     align-items: center;
+     animation: move1 2s ease-out ;
+}
+@keyframes move1{
+   from{
+    transform:translateY(-450px);
+   }
+   to{
+     transform:translateY(0px);
+   }
 }
 .l1 li{
     padding: 0px 30px;
@@ -43,6 +63,16 @@ color: red;
 .l2{
     display:flex ;
     align-items: center;
+     animation: move2 2s ease-out ;
+
+}
+@keyframes move2{
+   from{
+    transform:translateX(450px);
+   }
+   to{
+     transform:translateX(0px);
+   }
 }
 .l2 li{
     padding: 0px 10px;
@@ -82,9 +112,23 @@ display: block;
     .l2{
        margin-top: 50px; 
        margin-left: 120px;
-    }
-   
+    } 
 }
+@media(min-width:300px) and (max-width:490px){
+    .l1{
+        margin-left: 120px;
+
+    }
+    nav img{
+        margin-left: 30px;
+    }
+    .l2{
+        margin-left: 60px;
+    }
+  
+}
+    
+   
 
 
 
@@ -111,7 +155,20 @@ display: block;
 .header {
   text-align: center;
   padding: 30px;
+  animation: header 1s ease-out;
 }
+@keyframes header{
+  0%{
+    transform:translateY(-300px);
+    opacity: 0;
+    
+  }
+  100%{
+     transform:translateY(0px);
+    opacity: 1;
+  }
+}
+
 
 .header h1 {
   font-size: 32px;
@@ -128,7 +185,20 @@ display: block;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  animation: container 1s ease-out;
 }
+@keyframes container{
+  0%{
+    transform:translateY(300px);
+    opacity: 0;
+    
+  }
+  100%{
+     transform:translateY(0px);
+    opacity: 1;
+  }
+}
+
 
 /* TITLE */
 h2 {
@@ -182,6 +252,10 @@ button {
 
 button:hover {
   background: #e60000;
+}
+button a{
+  text-decoration: none;
+  color: white;
 }
 
 

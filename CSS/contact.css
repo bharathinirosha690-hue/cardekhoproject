@@ -1,9 +1,12 @@
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
+
 header{
 background: #dad7cd;
 color: black;
@@ -12,6 +15,15 @@ padding: 25px;
 /* Nav Img */
 nav img{
     width: 300px;
+    animation: move 2s ease-out ;
+}
+@keyframes move{
+   from{
+    transform:translateX(-450px);
+   }
+   to{
+     transform:translateX(0px);
+   }
 }
 header nav{
     display: flex;
@@ -22,6 +34,15 @@ header nav{
 .l1{
     display:flex ;
     align-items: center;
+     animation: move1 2s ease-out ;
+}
+@keyframes move1{
+   from{
+    transform:translateY(-450px);
+   }
+   to{
+     transform:translateY(0px);
+   }
 }
 .l1 li{
     padding: 0px 30px;
@@ -42,6 +63,16 @@ color: red;
 .l2{
     display:flex ;
     align-items: center;
+     animation: move2 2s ease-out ;
+
+}
+@keyframes move2{
+   from{
+    transform:translateX(450px);
+   }
+   to{
+     transform:translateX(0px);
+   }
 }
 .l2 li{
     padding: 0px 10px;
@@ -81,9 +112,43 @@ display: block;
     .l2{
        margin-top: 50px; 
        margin-left: 120px;
-    }
-   
+    } 
 }
+@media(min-width:300px) and (max-width:490px){
+    .l1{
+        margin-left: 120px;
+
+    }
+    nav img{
+        margin-left: 30px;
+    }
+    .l2{
+        margin-left: 60px;
+    }
+    .banner{
+        height: 300px !important;
+
+    }
+}
+    
+@media(min-width:300px) and (max-width:490px){
+    .l1{
+        margin-left: 120px;
+
+    }
+    nav img{
+        margin-left: 30px;
+    }
+    .l2{
+        margin-left: 60px;
+    }
+    .main{
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    
+}
+   
 /* Hero Section */
 .hero {
   background:black;
@@ -165,7 +230,20 @@ display: block;
   background: #fff;
   padding: 25px;
   border-radius: 10px;
+  animation: left 1s ease-out;
 }
+@keyframes left{
+  0%{
+    transform:translateX(-300px);
+    opacity: 0;
+    
+  }
+  100%{
+     transform:translateX(0px);
+    opacity: 1;
+  }
+}
+
 
 .left h2, .right h2 {
   margin-bottom: 10px;
@@ -186,6 +264,18 @@ display: block;
   background: #fff;
   padding: 25px;
   border-radius: 10px;
+  animation: right 1s ease-out;
+}
+@keyframes right{
+  0%{
+    transform:translateX(300px);
+    opacity: 0;
+    
+  }
+  100%{
+     transform:translateX(0px);
+    opacity: 1;
+  }
 }
 
 .right input,
@@ -206,6 +296,10 @@ display: block;
   border-radius: 5px;
   cursor: pointer;
 }
+.right button a{
+  text-decoration: none;
+  color: white;
+} 
 
 .right button:hover {
   background: #0056b3;
