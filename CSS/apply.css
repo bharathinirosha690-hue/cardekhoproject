@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+/* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
 }
 
 
@@ -11,6 +13,7 @@ header{
 background: #dad7cd;
 color: black;
 padding: 25px;
+font-family: "Poppins", sans-serif !important; 
 }
 /* Nav Img */
 nav img{
@@ -54,6 +57,7 @@ font-size: 21px;
 font-weight: 600;
 text-decoration: none;
 transition: 0.3s;
+color: black;
 }
 
 /*  Hover*/
@@ -213,7 +217,8 @@ h2 {
 
 label {
   font-weight: bold;
-  display: block;
+  /* display: flex; */
+  gap: 10px;
   margin-bottom: 5px;
 }
 
@@ -225,10 +230,40 @@ input, select, textarea {
   border: 1px solid #ccc;
   transition: 0.3s;
 }
-
+ 
 input:focus, select:focus, textarea:focus {
   border-color: #ff4d4d;
   outline: none;
+} 
+/* RADIO OPTIONS */
+.radio-options {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* KEEP TEXT + BUTTON INLINE */
+.radio-item {
+  display: flex;
+  align-items: center;   /* aligns perfectly */
+  gap: 6px;
+  cursor: pointer;
+  white-space: nowrap;   /* prevents breaking */
+}
+
+/* VERY IMPORTANT FIX */
+.radio-item input[type="radio"] {
+  width: auto;   /* overrides 100% width */
+  margin: 0;
+  padding: 0;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  .radio-options {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /* RADIO + CHECKBOX */
@@ -237,6 +272,29 @@ input:focus, select:focus, textarea:focus {
   gap: 10px;
   flex-wrap: wrap;
 }
+/* OPTIONS WRAPPER */
+.options1 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* INLINE OPTION */
+.option-inline1 {
+  display: flex;
+  align-items: center;   /* keeps checkbox + text aligned */
+  gap: 6px;              /* space between checkbox & text */
+  white-space: nowrap;   /* prevents text from breaking */
+  cursor: pointer;
+}
+
+/* CHECKBOX SIZE */
+.option-inline input1 {
+  width: 16px;
+  height: 16px;
+  accent-color: #ff4d4d;
+}
+
 
 /* BUTTON */
 button {
