@@ -130,14 +130,14 @@ display: block;
         margin-left: 60px;
     }
     .banner{
-        height: 300px !important;
+        height: 210px !important;
 
     }
 }
     
 
 .banner{ 
-     height: 900px;
+     height: auto;
     width: 100%;
     animation: banner 1s ease-out;
 
@@ -235,17 +235,17 @@ height: auto;
    border-radius: 20px 20px 0 0;
 }
 .car1 .p1{
-    padding: 10px 15px;
+    padding: 10px 0px 10px 30px;
     font-size: 25px;
 }
 .car1 .p2{
-    padding: 5px 15px;
+     padding: 10px 0px 10px 30px;
     font-size: 20px;
 }
 .car1 button{
     padding: 5px 70px;
-    font-size: 25px;
-    margin: 10px 15px;
+    font-size: 20px;
+    margin: 10px 0px 10px 30px;
     border-radius: 10px;
     background-color: blue;
     color: white;
