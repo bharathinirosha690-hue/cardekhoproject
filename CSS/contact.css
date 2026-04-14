@@ -309,6 +309,97 @@ display: block;
   background: #0056b3;
 }
 
+
+
+
+
+
+
+
+/* SECTION */
+.why {
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #eef2f3, #ffffff);
+  text-align: center;
+}
+
+/* TITLE */
+.why h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #222;
+  position: relative;
+}
+
+/* GRID */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* BOX */
+.why-grid div {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+  animation: fadeUp 0.8s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* HOVER EFFECT */
+.why-grid div:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* TOP COLOR BAR ANIMATION */
+.why-grid div::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  transition: 0.4s ease;
+}
+
+.why-grid div:hover::before {
+  width: 100%;
+}
+
+/* HEADING */
+.why-grid h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+/* TEXT */
+.why-grid p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FAQ */
 .faq {
   padding: 30px;
@@ -427,6 +518,13 @@ text-shadow:0 0 10px gold;
   font-size: 18px;
   letter-spacing: 1px;
 }
+
+
+
+
+
+
+
 
 
 

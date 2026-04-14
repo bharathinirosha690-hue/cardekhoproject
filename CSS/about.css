@@ -176,6 +176,9 @@ animation: video 1s ease-out;
   }
 }
 
+
+
+
 /* TITLE */
 .h1{
 text-align:center;
@@ -183,7 +186,6 @@ margin:20px;
 }
 .h1 h1{
 color:black;
-/* text-shadow:0 0 10px gold; */
 }
 
 /* CAR GRID */
@@ -216,36 +218,234 @@ transform:rotateY(15deg) scale(1.1);
 box-shadow:0 0 20px cyan;
 }
 
-/* CONTENT */
-.container{
-max-width:1000px;
-margin:20px auto;
-background-color: whitesmoke;
-border-radius:12px;
+
+
+.wrapper {
+  background: linear-gradient(135deg, #0f172a, #1e40af);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
 }
 
-h1,h2,h3{
-color: blue;
-margin-bottom:10px;
+/* MAIN CONTAINER */
+.container {
+  width: 80%;
+  max-width: 1000px;
+  background: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
 }
 
-/*LIST STYLE */
-.gree{
-display:block;
+/* TITLE */
+.main-title {
+  text-align: center;
+  color: #0f172a;
+  font-size: 32px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 10px;
 }
-.gree .card{
-background:rgba(255,255,255,0.05);
-/* border-left:4px solid gold; */
-padding:12px;
-margin-bottom:10px;
-border-radius:6px;
+
+/* INTRO */
+.intro-text {
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.6;
 }
-.container ul li{
-   margin-left: 40px;
+
+/* GRID */
+.box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
 }
-.container{
-    padding: 30px 100px 30px 50px;
+
+/* SMALL BOX */
+.info-box {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #2563eb;
+  transition: 0.3s ease;
 }
+
+/* BOX HOVER */
+.info-box:hover {
+  transform: translateY(-5px);
+  background: #e0f2fe;
+}
+
+/* BOX TITLE */
+.info-box h3 {
+  color: #1d4ed8;
+  margin-bottom: 5px;
+}
+
+/* TEXT */
+.info-box p {
+  color: black;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Section */
+.celebration-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Title */
+.celebration-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Text */
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #555;
+    padding: 0 10px 15px;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+.faq {
+  font-family: Arial, sans-serif;
+  max-width: 1000px; 
+  margin: 30px auto;
+  padding: 0 15px;
+  background: #fafafa;
+}
+
+.faq details {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 14px 20px;
+  background: #fff;
+}
+
+.faq summary {
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  position: relative;
+  padding-right: 25px;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "▼";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.faq details[open] summary::after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.faq details[open] {
+  background: #e6f0ff;
+}
+
+.faq details p {
+  margin-top: 12px;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+
 
 /* FOOTER */
 .footer{
